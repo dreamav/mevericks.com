@@ -1,0 +1,80 @@
+// Vars ****************************************************************************************************************
+$COL_WIDTH: 6.5%;
+$COL_MARGIN: 2%;
+
+
+
+// Mixins **************************************************************************************************************
+
+
+
+// Extends *************************************************************************************************************
+
+
+
+// Placeholders ********************************************************************************************************
+
+
+
+// Body ****************************************************************************************************************
+
+// Clearing row --------------------------------------------------------------------------------------------------------
+.ish-row,
+/*VC*/.vc_row-fluid,
+.wpb_column {
+	//clear: both;
+	@extend %_clearfix;
+
+	/* Added because of the ish-row-overlay opacity support  */
+	position: relative;
+}
+
+.ish-row_inner,
+/*VC*/.ish-vc_row_inner {
+	@extend %_clearfix;
+}
+
+// All grid* classes
+[class^="ish-grid"], [class*=" ish-grid"] {
+	float: left;
+	min-height: 1px;
+	margin-left: $COL_MARGIN;
+
+	// Remove margin on last grid
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+/*VC*/.vc_row-fluid [class^="vc_span"], .vc_row-fluid [class*=" vc_span"] {
+	margin-left: $COL_MARGIN !important;
+
+	// Remove margin on last grid
+	&:first-child {
+		margin-left: 0 !important;
+	}
+}
+
+[class^="ish-grid"], [class*=" ish-grid"] {
+	@extend %_clearfix;
+}
+
+// Image width 100% only in case it doesn't have set width attribute
+[class^="ish-grid"], [class*=" ish-grid"], [class^="vc_span"], [class*=" vc_span"], .wpb_row {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+// Grids width
+@for $i from 1 through 12 {
+	@if $i == 1 {
+		.ish-grid#{$i} { width: $COL_WIDTH; }
+		/*VC*/.vc_span#{$i} { width: $COL_WIDTH !important; float: left; }
+	}
+	@else {
+		.ish-grid#{$i} { width: ( $COL_WIDTH * $i ) + ( $COL_MARGIN * ( $i - 1 ) ); }
+		/*VC*/.vc_span#{$i} { width: ( $COL_WIDTH * $i ) + ( $COL_MARGIN * ( $i - 1 ) ) !important; float: left; }
+	}
+}

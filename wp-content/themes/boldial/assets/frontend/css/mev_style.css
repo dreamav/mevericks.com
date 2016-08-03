@@ -1,0 +1,1092 @@
+/*===================================
+=            Общие стили            =
+===================================*/
+
+	.mev_bg-bottom{ background-position: center bottom; }
+	.mev-no_bottom_margin{ margin-bottom: 0px !important; }
+	
+	/*Скрываем блоки, которые будут показаны в зависимости от устройства*/
+	.land_block, .portrait_block{display: none;}
+
+/*-----  End of Общие стили  ------*/
+
+
+
+/*==============================
+=            #intro            =
+==============================*/
+
+	#intro .ish-vc_row_inner{ padding-top: 0px}
+
+/*-----  End of #intro  ------*/
+
+
+/*==============================
+=            #agile            =
+==============================*/
+
+	#agile h2{ font-family: 'code_pro' !important; font-size:66px; }
+	#agile h3{ font-family: 'code_bold' !important; font-size:24px; line-height: 24px; }
+
+	/* Стили для блоков ----------------- */
+	#mev_tr_website, #mev_tr_design, #mev_tr_video, #mev_tr_seo{
+		cursor: pointer;
+	}
+	/*#mev_website_block, #mev_design_block, #mev_video_block, #mev_seo_block{
+		background-color: #f6dc6b;
+		color: #000;
+		padding: 20px;
+		margin-bottom: 25px !important;
+		display: none;
+	}*/
+	#mev_website_block, #mev_design_block, #mev_video_block, #mev_seo_block{
+		background: url('../images/bg-images/agileblbg.svg') no-repeat;
+		background-size: contain;
+		position: absolute;
+		width: 46%;
+		top: 10%;
+		left: 50%;
+		margin-left: -23% !important;
+		z-index: 5;
+		display: none;
+	}
+
+	#mev_website_block img{
+		width: 75.9%;
+	}
+	#mev_design_block img{
+		width: 70%;
+	}
+
+	#agile h3.block_header{
+		font-size: 36px;
+		line-height: 38px;
+		margin-top: 65px !important;
+	}
+	#agile h3.nugde_top_80, #agile div.nugde_top_80{
+		margin-top: -80px !important;
+	}
+	#agile div.nugde_top_40{
+		margin-top: -40px !important;
+	}
+
+
+
+
+	.close_this{
+		position: absolute;
+		right: 0;
+		cursor: pointer;
+	}
+/*-----  End of #agile  ------*/
+
+
+/*==================================
+=            #portfolio            =
+==================================*/
+
+	#portfolio .ish-vc_row_inner{position: relative; z-index: 1}
+	#portfolio .ish-vc_row_inner .ish-sc_portfolio{margin: 0 auto 25px auto !important;}
+	#portfolio .ish-sc_portfolio .ish-section-filter .ish-sc_headline{margin-bottom: 10px !important}
+	#portfolio .ish-sc_portfolio .ish-section-filter nav{margin-bottom: 0px !important}
+	.ish-sc_portfolio.ish-p-packery{margin: 0 auto;}
+
+	/*Блок с мальчиком с факелом*/
+	.cave-boy{ position: absolute; bottom: 79px; left: 0px; z-index: 0}
+	.fix-boy{ position: relative; }
+
+/*-----  End of #portfolio  ------*/
+
+
+/*================================
+=            #contakt            =
+================================*/
+
+	#contact .ufo img { width: 20%; }
+	#contact .ish-sc_icon_button_set { text-align: center; }
+	#contact .ish-sc_svg_icon+.ish-sc_svg_icon{ margin-left: 0px !important; }
+	#contact .ish-sc_icon_button_set{ margin-top: 25px !important; }
+	#contact .ish-sc_icon_button_set .ish-sc-element{ margin-bottom: 0px !important; }
+
+/*-----  End of #contakt  ------*/
+
+
+/* `iCarousel 
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+	/* The Preloader in the Slider */
+	#iCarousel-preloader {
+		position: absolute;
+		z-index: 1000;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		border: #000 1px solid;
+		border-color: rgba(0,0,0,0.6);
+		padding: 1px;
+		width: 150px;
+		height: 3px;
+	}
+	#iCarousel-preloader div {
+		float: left;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		height: 3px;
+		background: #000;
+		background: rgba(0,0,0,0.6);
+		width: 0px;
+	}
+
+	/* The timer in the Slider */
+	#iCarousel-timer {
+		position: absolute;
+		z-index: 1000;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	#iCarousel-timer div {
+		border-radius: 3px;
+	}
+	.carousel-container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		z-index: 0;
+	}
+
+	#icarousel {
+		width: 490px;
+		height: 400px;
+		position: relative;
+		margin: 20px auto;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		-webkit-perspective: 1000px;
+		-moz-perspective: 1000px;
+		-o-perspective: 1000px;
+		-ms-perspective: 1000px;
+		perspective: 1000px;
+	}
+
+	#icarousel .slide {
+		display: block;
+		border-radius: 4px;
+		border: 5px #000 solid;
+		width: 480px;
+		height: 360px;
+	}
+
+	/* The Navigation buttons in the Slider */
+	a.iCarouselNav {
+		display: block;
+		position: absolute;
+		top: 178px;
+		width: 43px;
+		height: 43px;
+		background: url(../images/arrows.png) no-repeat;
+		z-index: 1000;
+		text-indent: -9999px;
+		cursor: pointer;
+		-webkit-transition: none;
+		   -moz-transition: none;
+		    -ms-transition: none;
+		     -o-transition: all 0 linear;
+		        transition: none;
+	}
+
+	a#iCarouselPrev {
+		left: 10px;
+		background-position: left top;
+	}
+
+	a#iCarouselPrev:hover {
+		background-position: left bottom;
+	}
+
+	a#iCarouselNext {
+		right: 10px;
+		background-position: right top;
+	}
+
+	a#iCarouselNext:hover {
+		background-position: right bottom;
+	}
+/*-----  End of iCarousel  ------*/
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 420px)
+and (max-device-width : 480px) {
+/* STYLES GO HERE */
+.cave-boy{display: none}
+}
+ 
+/* SMARTPHONES (LANDSCAPE) ----------- */
+@media all
+and (min-width : 421px)
+and (max-width : 768px)
+and (orientation : landscape) {
+
+/* `Первый блок: #intro;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+	
+	#intro.ish-row_section.ish-row-full-height .ish-vc_row_inner{
+		vertical-align: middle;
+	}
+	#intro .wpb_wrapper{
+		width: 80%;
+		margin: 0 auto;
+	}
+	#intro .wpb_wrapper img{
+		width: 30%;
+	}
+	#intro .wpb_wrapper h2{
+		font-size: 18px;
+		line-height: 19px;
+	}
+	#intro .wpb_wrapper h3{
+		font-size: 12px;
+		line-height: 13px;
+		margin-bottom: 40px !important;
+	}
+	#intro .wpb_wrapper h5{
+		font-size: 10px;
+		line-height: 12px;
+		margin-bottom: 0px !important;
+	}
+	.land_block{display: block;}
+
+/* `Второй блок: #agile;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+	#agile.ish-row_section.ish-row-full-height .ish-vc_row_inner{
+		vertical-align: middle;
+	}
+	#agile .vc_span9{
+		width: 75% !important;
+	}
+	#agile .wpb_wrapper .vc_span3{
+		width: 25% !important;
+		float: left !important;
+		margin-bottom: 10px !important;
+		margin-left: 0 !important;
+	}
+	#agile .wpb_wrapper .vc_span3 .ish-sc-element{
+		margin-bottom: 0px !important;
+	}
+	#agile .wpb_wrapper .vc_span3 .ish-sc-element svg{
+		width: 100px !important;
+		height: 100px !important;
+	}
+	#agile .wpb_wrapper .vc_span3 .ish-sc-element span span{
+		width: 100px !important;
+		height: 100px !important;
+	}
+
+	#agile .wpb_wrapper h2{
+		font-size: 40px;
+		color:#0473aa;
+	}
+	#agile .wpb_wrapper h3{
+		font-size: 18px;
+		line-height: 20px;
+		margin-bottom: 10px !important;
+	}
+	#agile .wpb_wrapper h5{
+		font-size: 10px;
+		line-height: 12px;
+		margin-bottom: 0px !important;
+	}
+	#mev_website_block, #mev_design_block, #mev_video_block, #mev_seo_block{
+		width: 57%;
+		top: 22%;
+		left: 22%;
+		margin-left: 0% !important;
+	}
+
+/* ` 3 блок: #portfoloi;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+	.ish-sc_portfolio.ish-p-packery{
+		width:80% !important;
+		/*float: left !important;*/
+	}
+	.ish-sc_portfolio[data-count="4"] .ish-p-col{
+		width: 25% !important;
+	}
+	.carousel-container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		z-index: 0;
+	}
+
+	#icarousel {
+		width: 80%;
+		height: 220px;
+	}
+	#icarousel .slide {
+		width: 480px;
+		height: 200px;
+	}
+	a.iCarouselNav {
+		top: 85px;
+	}
+	
+/* ` 4 блок: #contact;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+	#contact h2{
+		font-size: 30px;
+		line-height: 32px;
+		margin-bottom: 10px !important;
+	}
+	#contact h3{
+		font-size: 18px;
+		line-height: 20px;
+		margin-bottom: 20px !important;
+	}
+	#contact .vc_row-fluid{
+		width: 100% !important;
+		margin: 0 auto !important;
+	}
+	#contact .vc_row-fluid .vc_span4{
+		width: 33.333333% !important;
+		float: left !important;
+		margin-bottom: 0 !important;
+	}
+	#contact .vc_row-fluid .ish-sc-element{
+		margin-bottom: 10px !important;
+	}
+	#contact .vc_row-fluid svg{
+		width: 100px !important;
+		height: 100px !important;
+		margin: 0 auto !important;
+	}
+	#contact .vc_row-fluid span span{
+		width: 100px !important;
+		height: 100px !important;
+		margin: 0 auto !important;
+	}
+	#contact .ish-sc_icon_button_set {
+		text-align: center;
+	}
+	#contact .ish-sc_svg_icon+.ish-sc_svg_icon{
+		margin-left: 0px !important;
+	}
+	#contact .ish-sc_icon_button_set{
+		margin-top: 25px !important;
+	}
+	#contact .ish-sc_icon_button_set .ish-sc-element{
+		margin-bottom: 0px !important;
+	}
+}
+ 
+/* SMARTPHONES (PORTRAIT) ----------- */
+@media only screen
+and (max-width : 462px) {
+.cave-boy{display: none}
+.portrait_block{display: block;}
+/* `Первый блок: #intro;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+	#intro.ish-row_section.ish-row-full-height .ish-vc_row_inner{
+		vertical-align: middle;
+	}
+	#intro .wpb_wrapper{
+		width: 100%;
+	}
+	#intro .wpb_wrapper img{
+		width: 60%;
+	}
+	#intro .wpb_wrapper h2{
+		font-size: 18px;
+		line-height: 19px;
+	}
+	#intro .wpb_wrapper h3{
+		font-size: 10px;
+		line-height: 12px;
+		margin-bottom: 30px !important;
+	}
+
+/* `Второй блок: #agile;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+	#agile.ish-row_section.ish-row-full-height .ish-vc_row_inner{
+		vertical-align: middle;
+	}
+	#agile .wpb_wrapper{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#agile .wpb_wrapper .vc_span3{
+		width: 50% !important;
+		float: left !important;
+		margin-bottom: 10px !important;
+	}
+	#agile .wpb_wrapper .vc_span3 .ish-sc-element{
+		margin-bottom: 0px !important;
+	}
+	#agile .wpb_wrapper .vc_span3 .ish-sc-element svg{
+		width: 100px !important;
+		height: 100px !important;
+	}
+	#agile .wpb_wrapper .vc_span3 .ish-sc-element span span{
+		width: 100px !important;
+		height: 100px !important;
+	}
+
+	#agile .wpb_wrapper h2{
+		font-size: 36px;
+		color:#0473aa;
+	}
+	#agile .wpb_wrapper h3{
+		font-size: 18px;
+		line-height: 20px;
+		margin-bottom: 10px !important;
+	}
+	#agile .wpb_wrapper h5{
+		font-size: 10px;
+		line-height: 12px;
+		margin-bottom: 0px !important;
+	}
+	#mev_website_block, #mev_design_block, #mev_video_block, #mev_seo_block{
+		width: 89%;
+		top: 22%;
+		left: 5%;
+		margin-left: 0% !important;
+	}
+	.close_this {
+		top: 22px;
+	}
+
+/* ` 3 блок: #portfoloi;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+	.ish-sc_portfolio.ish-p-packery{
+		width:90% !important;
+		/*float: left !important;*/
+	}
+	.ish-sc_portfolio[data-count="4"] .ish-p-col{
+		width: 50% !important;
+	}
+		.carousel-container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		z-index: 0;
+	}
+
+	#icarousel {
+		width: 80%;
+	}
+
+
+/* ` 4 блок: #contact;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+	#contact h2{
+		font-size: 22px;
+		line-height: 23px;
+		margin-bottom: 10px !important;
+	}
+	#contact h3{
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 20px !important;
+	}
+	#contact .vc_row-fluid{
+		width: 100% !important;
+		margin: 0 auto !important;
+	}
+	#contact .vc_row-fluid .vc_span4{
+		width: 50% !important;
+		float: left !important;
+		margin-bottom: 0 !important;
+	}
+	#contact .vc_row-fluid .vc_span4:nth-child(3n){
+		clear: both;
+		width: 100% !important;
+	}
+	#contact .vc_row-fluid .ish-sc-element{
+		margin-bottom: 10px !important;
+	}
+	#contact .vc_row-fluid svg{
+		width: 100px !important;
+		height: 100px !important;
+		margin: 0 auto !important;
+	}
+	#contact .vc_row-fluid span span{
+		width: 100px !important;
+		height: 100px !important;
+		margin: 0 auto !important;
+	}
+	#contact .ish-sc_icon_button_set {
+		text-align: center;
+	}
+	#contact .ish-sc_svg_icon+.ish-sc_svg_icon{
+		margin-left: 0px !important;
+	}
+	#contact .ish-sc_icon_button_set{
+		margin-top: 25px !important;
+	}
+	#contact .ish-sc_icon_button_set .ish-sc-element{
+		margin-bottom: 0px !important;
+	}
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+/* STYLES GO HERE */
+	.cave-boy{display: none}
+}
+ 
+/* IPADS (LANDSCAPE) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape) {
+
+	.land_block{display: block;}
+/* `Первый блок: #intro;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+	#intro.ish-row_section.ish-row-full-height .ish-vc_row_inner{
+		vertical-align: top;
+	}
+	#intro .wpb_wrapper{
+		width: 75%;
+		margin: 0 auto;
+	}
+	#intro .wpb_wrapper img{
+		width: 226px;
+	}
+	#intro .wpb_wrapper h2{
+		font-size: 24px;
+		line-height: 26px;
+	}
+	#intro .wpb_wrapper h3{
+		font-size: 14px;
+		line-height: 15px;
+		margin-bottom: 30px !important;
+	}
+
+
+
+/* `Второй блок: #agile;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+	#agile.ish-row_section.ish-row-full-height .ish-vc_row_inner{
+		vertical-align: middle;
+	}
+	#agile .vc_span9{
+		width: 75% !important;
+	}
+
+	#agile .wpb_wrapper .vc_span3{
+		width: 25% !important;
+		float: left !important;
+		margin-bottom: 10px !important;
+		margin-left: 0 !important;
+	}
+	#agile .wpb_wrapper .vc_span3 .ish-sc-element{
+		margin-bottom: 0px !important;
+	}
+	#agile .wpb_wrapper .vc_span3 .ish-sc-element svg{
+		width: 100px !important;
+		height: 100px !important;
+	}
+	#agile .wpb_wrapper .vc_span3 .ish-sc-element span span{
+		width: 100px !important;
+		height: 100px !important;
+	}
+
+	#agile .wpb_wrapper h2{
+		font-size: 40px;
+		color:#0473aa;
+	}
+	#agile .wpb_wrapper h3{
+		font-size: 18px;
+		line-height: 20px;
+		margin-bottom: 10px !important;
+	}
+	#agile .wpb_wrapper h5{
+		font-size: 10px;
+		line-height: 12px;
+		margin-bottom: 0px !important;
+	}
+
+	#mev_website_block, #mev_design_block, #mev_video_block, #mev_seo_block{
+		width: 57.5%;
+		top: 11%;
+		left: 64%;
+		margin-left: -42% !important;
+	}
+	.close_this {
+		top: 22px;
+	}
+
+/* ` 3 блок: #portfoloi;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+	
+	.ish-sc_portfolio.ish-p-packery{
+		width:80% !important;
+		/*float: left !important;*/
+	}
+	.ish-sc_portfolio[data-count="4"] .ish-p-col{
+		width: 25% !important;
+	}
+	.carousel-container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		z-index: 0;
+	}
+
+	#icarousel {
+		width: 60%;
+		height: 260px;
+	}
+	#icarousel .slide {
+		width: 480px;
+		height: 240px;
+	}
+	a.iCarouselNav {
+		top: 112px;
+	}
+
+/* ` 4 блок: #contact;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+	#contact h2{
+		font-size: 34px;
+		line-height: 35px;
+		margin-bottom: 25px !important;
+	}
+	#contact h3{
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 20px !important;
+	}
+	#contact .ufo img{
+		width: 20%;
+	}
+	#contact .vc_row-fluid{
+		width: 80% !important;
+		margin: 0 auto !important;
+	}
+	#contact .vc_row-fluid .vc_span4{
+		width: 33.33333% !important;
+		float: left !important;
+		margin-bottom: 0 !important;
+		margin-left: 0 !important;
+	}
+	#contact .vc_row-fluid .ish-sc-element{
+		margin-bottom: 10px !important;
+	}
+	#contact .vc_row-fluid svg{
+		width: 100px !important;
+		height: 100px !important;
+		margin: 0 auto !important;
+	}
+	#contact .vc_row-fluid span span{
+		width: 100px !important;
+		height: 100px !important;
+		margin: 0 auto !important;
+	}
+	#contact .ish-sc_icon_button_set {
+		text-align: center;
+	}
+	#contact .ish-sc_svg_icon+.ish-sc_svg_icon{
+		margin-left: 0px !important;
+	}
+	#contact .ish-sc_icon_button_set{
+		margin-top: 25px !important;
+	}
+	#contact .ish-sc_icon_button_set .ish-sc-element{
+		margin-bottom: 0px !important;
+	}
+}
+ 
+/* IPADS (PORTRAIT) ----------- */
+@media all
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : portrait) {
+
+.portrait_block{display: block;}
+
+/* `Первый блок: #intro;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+	
+	#intro.ish-row_section.ish-row-full-height .ish-vc_row_inner{
+		vertical-align: middle;
+	}
+	#intro .wpb_wrapper{
+		width: 80%;
+		margin: 0 auto;
+	}
+	#intro .wpb_wrapper img{
+		width: 386px;
+	}
+	#intro .wpb_wrapper h2{
+		font-size: 34px;
+		line-height: 36px;
+	}
+	#intro .wpb_wrapper h3{
+		font-size: 16px;
+		line-height: 17px;
+		margin-bottom: 30px !important;
+	}
+
+/* `Второй блок: #agile;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+	
+	#agile.ish-row_section.ish-row-full-height .ish-vc_row_inner{
+		vertical-align: middle;
+	}
+	#agile .vc_span9{
+		width: 100% !important;
+	}
+	#agile .vc_span8{
+		width: 100% !important;
+		margin-left: 0 !important;
+	}
+	#agile .wpb_wrapper{
+		width: 70%;
+		margin: 0 auto;
+	}
+	#agile .wpb_wrapper .vc_span3{
+		width: 50% !important;
+		float: left !important;
+		margin-bottom: 10px !important;
+		margin-left: 0 !important;
+	}
+	#agile .wpb_wrapper .vc_span3 .ish-sc-element{
+		margin-bottom: 0px !important;
+	}
+
+	#agile .wpb_wrapper h2{
+		font-size: 40px;
+		color:#0473aa;
+	}
+	#agile .wpb_wrapper h3{
+		font-size: 16px;
+		line-height: 18px;
+		margin-bottom: 10px !important;
+	}
+	#agile .wpb_wrapper h5{
+		font-size: 10px;
+		line-height: 12px;
+		margin-bottom: 0px !important;
+	}
+
+	#mev_website_block, #mev_design_block, #mev_video_block, #mev_seo_block{
+		width: 88.8%;
+		top: 18%;
+		left: 47%;
+		margin-left: -42% !important;
+	}
+
+/* ` 3 блок: #portfoloi;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+	
+	.ish-sc_portfolio.ish-p-packery{
+		width:90% !important;
+		/*float: left !important;*/
+	}
+	.ish-sc_portfolio[data-count="4"] .ish-p-col{
+		width: 25% !important;
+	}
+	.carousel-container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		z-index: 0;
+	}
+
+	#icarousel {
+		width: 80%;
+		height: 380px;
+	}
+	#icarousel .slide {
+		width: 480px;
+		height: 360px;
+	}
+/* ` 4 блок: #contact;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+	#contact h2{
+		font-size: 34px;
+		line-height: 35px;
+		margin-bottom: 25px !important;
+	}
+	#contact h3{
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 20px !important;
+	}
+	#contact .ufo img{
+		width: 30%;
+	}
+	#contact .vc_row-fluid{
+		width: 80% !important;
+		margin: 0 auto !important;
+	}
+	#contact .vc_row-fluid .vc_span4{
+		width: 33.33333% !important;
+		float: left !important;
+		margin-bottom: 0 !important;
+		margin-left: 0 !important;
+	}
+	#contact .vc_row-fluid .ish-sc-element{
+		margin-bottom: 10px !important;
+	}
+	#contact .vc_row-fluid svg{
+		width: 100px !important;
+		height: 100px !important;
+		margin: 0 auto !important;
+	}
+	#contact .vc_row-fluid span span{
+		width: 100px !important;
+		height: 100px !important;
+		margin: 0 auto !important;
+	}
+	#contact .ish-sc_icon_button_set {
+		text-align: center;
+	}
+	#contact .ish-sc_svg_icon+.ish-sc_svg_icon{
+		margin-left: 0px !important;
+	}
+	#contact .ish-sc_icon_button_set{
+		margin-top: 25px !important;
+	}
+	#contact .ish-sc_icon_button_set .ish-sc-element{
+		margin-bottom: 0px !important;
+	}	
+
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+
+	.land_block{display: block;}
+
+/* `Первый блок: #intro;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+	#intro .wpb_wrapper img{
+		width: 30%;
+	}
+	#intro .wpb_wrapper h2{
+		font-size: 28px;
+	}
+	#intro .wpb_wrapper h3{
+		font-size: 16px;
+		line-height: 17px;
+	}
+
+
+/* `Второй блок: #agile;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+	#mev_website_block, #mev_design_block, #mev_video_block, #mev_seo_block{
+		width: 43%;
+		top: 5%;
+		left: 50%;
+		margin-left: -22% !important;
+	}
+
+/* ` 3 блок: #portfoloi;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+	
+	.ish-sc_portfolio.ish-p-packery{
+		width:50% !important;
+		/*float: left !important;*/
+	}
+	.ish-sc_portfolio[data-count="4"] .ish-p-col{
+		width: 25% !important;
+	}
+	.carousel-container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		z-index: 0;
+	}
+
+	#icarousel {
+		width: 80%;
+		height: 380px;
+	}
+	#icarousel .slide {
+		width: 480px;
+		height: 360px;
+	}
+
+
+/* `4 блок: #contact;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+	#contact h2{
+		font-size: 30px;
+		line-height: 32px;
+		margin-bottom: 10px !important;
+	}
+	#contact h3{
+		font-size: 18px;
+		line-height: 20px;
+		margin-bottom: 20px !important;
+	}
+	#contact .vc_row-fluid{
+		width: 60% !important;
+		margin: 0 auto !important;
+	}
+	#contact .vc_row-fluid .ish-sc-element{
+		margin-bottom: 10px !important;
+	}
+	#contact .vc_row-fluid svg{
+		width: 100px !important;
+		height: 100px !important;
+		margin: 0 auto !important;
+	}
+	#contact .vc_row-fluid span span{
+		width: 100px !important;
+		height: 100px !important;
+		margin: 0 auto !important;
+	}
+	#contact .ufo img {width: 10%;}
+}
+ 
+/* LARGE SCREENS ----------- */
+@media only screen
+and (min-width : 1824px) {
+
+	.land_block{display: block;}
+
+/* `Первый блок: #intro;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+	#intro .wpb_wrapper img{
+		width: 486px;
+	}
+	#intro .wpb_wrapper h2{
+		font-size: 44px;
+	}
+	#intro .wpb_wrapper h3{
+		font-size: 26px;
+		line-height: 27px;
+		margin-bottom: 30px !important;
+	}
+
+	.ish-sc_portfolio[data-count="4"] .ish-p-col{
+		width: 50%;
+	}
+
+	ul.mev_carousel{
+		height: 600px;
+	}
+
+	ul.mev_carousel:after, div.ish-sc_portfolio:after{
+		content:'';
+		clear: both;
+	}
+
+
+/* `Второй блок: #agile;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+	#mev_website_block, #mev_design_block, #mev_video_block, #mev_seo_block{
+		width: 46%;
+		top: 10%;
+		left: 50%;
+		margin-left: -23% !important;
+	}
+
+
+/* ` 3 блок: #portfoloi;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+	
+	.ish-sc_portfolio.ish-p-packery{
+		width:80% !important;
+		/*float: left !important;*/
+	}
+	.ish-sc_portfolio[data-count="4"] .ish-p-col{
+		width: 25% !important;
+	}
+	.carousel-container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		z-index: 0;
+	}
+
+	#icarousel {
+		width: 80%;
+		height: 380px;
+	}
+	#icarousel .slide {
+		width: 480px;
+		height: 360px;
+	}
+
+
+/* `4 блок: #contact;
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
+
+	#contact .ufo img {width: 30%;}
+}
+ 
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+ 
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
